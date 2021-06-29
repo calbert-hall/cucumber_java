@@ -1,66 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Login Functionality" time="40.926" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Login Functionality" time="103.232" tests="1" errors="1" skipped="0" failures="0">
   <properties>
-    <property name="sun.desktop" value="windows"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.specification.version" value="12"/>
-    <property name="webdriver.chrome.driver" value="C:\Drivers\chromedriver.exe"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course\target\test-classes;C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course\target\classes;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-java\5.0.0-RC2\cucumber-java-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-core\5.0.0-RC2\cucumber-core-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\gherkin\5.2.0\gherkin-5.2.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\gherkin-jvm-deps\1.0.6\gherkin-jvm-deps-1.0.6.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\tag-expressions\2.0.2\tag-expressions-2.0.2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-expressions\8.0.0\cucumber-expressions-8.0.0.jar;C:\Users\vgrk2\.m2\repository\org\hamcrest\hamcrest-library\2.1\hamcrest-library-2.1.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\datatable\3.0.0\datatable-3.0.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\datatable-dependencies\3.0.0\datatable-dependencies-3.0.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-plugin\5.0.0-RC2\cucumber-plugin-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\docstring\5.0.0-RC2\docstring-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-junit\5.0.0-RC2\cucumber-junit-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\vgrk2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\vgrk2\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\vgrk2\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\vgrk2\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\vgrk2\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\vgrk2\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\vgrk2\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\vgrk2\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\vgrk2\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\vgrk2\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\vgrk2\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-picocontainer\5.0.0-RC2\cucumber-picocontainer-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/test-classes:/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/classes:/Users/casey/.m2/repository/com/applitools/eyes-selenium-java3/3.204.1/eyes-selenium-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-selenium-common-java3/3.204.1/eyes-selenium-common-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-sdk-core-java3/3.204.1/eyes-sdk-core-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-ufg-java3/3.204.1/eyes-ufg-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-connectivity-java3/3.204.1/eyes-connectivity-java3-3.204.1.jar:/Users/casey/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.27/cssparser-0.9.27.jar:/Users/casey/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/casey/.m2/repository/com/applitools/eyes-connectivity-java3-jersey2x/3.204.1/eyes-connectivity-java3-jersey2x-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-common-java3/3.204.1/eyes-common-java3-3.204.1.jar:/Users/casey/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/casey/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/casey/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/casey/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/casey/.m2/repository/org/brotli/dec/0.1.1/dec-0.1.1.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/casey/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/casey/.m2/repository/org/glassfish/jersey/connectors/jersey-apache-connector/2.29/jersey-apache-connector-2.29.jar:/Users/casey/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/casey/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/casey/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/casey/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29/jersey-common-2.29.jar:/Users/casey/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.4/jakarta.annotation-api-1.3.4.jar:/Users/casey/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/casey/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/Users/casey/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar:/Users/casey/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29/jersey-client-2.29.jar:/Users/casey/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.5.0/jakarta.inject-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29/jersey-hk2-2.29.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0/aopalliance-repackaged-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0/hk2-api-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0/hk2-utils-2.5.0.jar:/Users/casey/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar:/Users/casey/.m2/repository/com/helger/ph-css/6.1.1/ph-css-6.1.1.jar:/Users/casey/.m2/repository/com/helger/ph-commons/9.0.2/ph-commons-9.0.2.jar:/Users/casey/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/casey/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-java/5.0.0-RC2/cucumber-java-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-core/5.0.0-RC2/cucumber-core-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/gherkin/5.2.0/gherkin-5.2.0.jar:/Users/casey/.m2/repository/io/cucumber/gherkin-jvm-deps/1.0.6/gherkin-jvm-deps-1.0.6.jar:/Users/casey/.m2/repository/io/cucumber/tag-expressions/2.0.2/tag-expressions-2.0.2.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-expressions/8.0.0/cucumber-expressions-8.0.0.jar:/Users/casey/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar:/Users/casey/.m2/repository/io/cucumber/datatable/3.0.0/datatable-3.0.0.jar:/Users/casey/.m2/repository/io/cucumber/datatable-dependencies/3.0.0/datatable-dependencies-3.0.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-plugin/5.0.0-RC2/cucumber-plugin-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/docstring/5.0.0-RC2/docstring-5.0.0-RC2.jar:/Users/casey/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-junit/5.0.0-RC2/cucumber-junit-5.0.0-RC2.jar:/Users/casey/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/casey/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/casey/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/casey/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/casey/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/casey/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/casey/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/casey/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/casey/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/casey/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/casey/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/casey/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-picocontainer/5.0.0-RC2/cucumber-picocontainer-5.0.0-RC2.jar:/Users/casey/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="Europe/London"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="12"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="15"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-12.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\vgrk2\AppData\Local\Temp\surefire6915538389197016289\surefirebooter12336661999427879399.jar C:\Users\vgrk2\AppData\Local\Temp\surefire6915538389197016289 2020-02-01T19-28-07_166-jvmRun1 surefire3529461489511014484tmp surefire_02396549133653125890tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/casey/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/surefire/surefirebooter14100515851965935659.jar /Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/surefire 2021-06-29T11-05-51_002-jvmRun1 surefire2617212910887300337tmp surefire_011655207155537327194tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course\target\test-classes;C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course\target\classes;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-java\5.0.0-RC2\cucumber-java-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-core\5.0.0-RC2\cucumber-core-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\gherkin\5.2.0\gherkin-5.2.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\gherkin-jvm-deps\1.0.6\gherkin-jvm-deps-1.0.6.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\tag-expressions\2.0.2\tag-expressions-2.0.2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-expressions\8.0.0\cucumber-expressions-8.0.0.jar;C:\Users\vgrk2\.m2\repository\org\hamcrest\hamcrest-library\2.1\hamcrest-library-2.1.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\datatable\3.0.0\datatable-3.0.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\datatable-dependencies\3.0.0\datatable-dependencies-3.0.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-plugin\5.0.0-RC2\cucumber-plugin-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\docstring\5.0.0-RC2\docstring-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-junit\5.0.0-RC2\cucumber-junit-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\vgrk2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\vgrk2\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\vgrk2\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\vgrk2\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\vgrk2\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\vgrk2\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\vgrk2\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\vgrk2\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\vgrk2\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\vgrk2\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\vgrk2\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\vgrk2\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\vgrk2\.m2\repository\io\cucumber\cucumber-picocontainer\5.0.0-RC2\cucumber-picocontainer-5.0.0-RC2.jar;C:\Users\vgrk2\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;"/>
+    <property name="surefire.test.class.path" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/test-classes:/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/classes:/Users/casey/.m2/repository/com/applitools/eyes-selenium-java3/3.204.1/eyes-selenium-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-selenium-common-java3/3.204.1/eyes-selenium-common-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-sdk-core-java3/3.204.1/eyes-sdk-core-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-ufg-java3/3.204.1/eyes-ufg-java3-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-connectivity-java3/3.204.1/eyes-connectivity-java3-3.204.1.jar:/Users/casey/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.27/cssparser-0.9.27.jar:/Users/casey/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/casey/.m2/repository/com/applitools/eyes-connectivity-java3-jersey2x/3.204.1/eyes-connectivity-java3-jersey2x-3.204.1.jar:/Users/casey/.m2/repository/com/applitools/eyes-common-java3/3.204.1/eyes-common-java3-3.204.1.jar:/Users/casey/.m2/repository/org/imgscalr/imgscalr-lib/4.2/imgscalr-lib-4.2.jar:/Users/casey/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/casey/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/casey/.m2/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar:/Users/casey/.m2/repository/org/brotli/dec/0.1.1/dec-0.1.1.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar:/Users/casey/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar:/Users/casey/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/Users/casey/.m2/repository/org/glassfish/jersey/connectors/jersey-apache-connector/2.29/jersey-apache-connector-2.29.jar:/Users/casey/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar:/Users/casey/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar:/Users/casey/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/casey/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29/jersey-common-2.29.jar:/Users/casey/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.4/jakarta.annotation-api-1.3.4.jar:/Users/casey/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/casey/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/Users/casey/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.5/jakarta.ws.rs-api-2.1.5.jar:/Users/casey/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29/jersey-client-2.29.jar:/Users/casey/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.5.0/jakarta.inject-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29/jersey-hk2-2.29.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-locator/2.5.0/hk2-locator-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0/aopalliance-repackaged-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-api/2.5.0/hk2-api-2.5.0.jar:/Users/casey/.m2/repository/org/glassfish/hk2/hk2-utils/2.5.0/hk2-utils-2.5.0.jar:/Users/casey/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar:/Users/casey/.m2/repository/com/helger/ph-css/6.1.1/ph-css-6.1.1.jar:/Users/casey/.m2/repository/com/helger/ph-commons/9.0.2/ph-commons-9.0.2.jar:/Users/casey/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/casey/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-java/5.0.0-RC2/cucumber-java-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-core/5.0.0-RC2/cucumber-core-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/gherkin/5.2.0/gherkin-5.2.0.jar:/Users/casey/.m2/repository/io/cucumber/gherkin-jvm-deps/1.0.6/gherkin-jvm-deps-1.0.6.jar:/Users/casey/.m2/repository/io/cucumber/tag-expressions/2.0.2/tag-expressions-2.0.2.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-expressions/8.0.0/cucumber-expressions-8.0.0.jar:/Users/casey/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar:/Users/casey/.m2/repository/io/cucumber/datatable/3.0.0/datatable-3.0.0.jar:/Users/casey/.m2/repository/io/cucumber/datatable-dependencies/3.0.0/datatable-dependencies-3.0.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-plugin/5.0.0-RC2/cucumber-plugin-5.0.0-RC2.jar:/Users/casey/.m2/repository/io/cucumber/docstring/5.0.0-RC2/docstring-5.0.0-RC2.jar:/Users/casey/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-junit/5.0.0-RC2/cucumber-junit-5.0.0-RC2.jar:/Users/casey/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/casey/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/casey/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/casey/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/casey/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/casey/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/casey/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/casey/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/casey/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/casey/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/casey/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/casey/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/casey/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/casey/.m2/repository/io/cucumber/cucumber-picocontainer/5.0.0-RC2/cucumber-picocontainer-5.0.0-RC2.jar:/Users/casey/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\vgrk2"/>
+    <property name="user.home" value="/Users/casey"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2019-07-16"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-12.0.2"/>
-    <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="/Users/casey/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\vgrk2\AppData\Local\Temp\surefire6915538389197016289\surefirebooter12336661999427879399.jar"/>
-    <property name="user.script" value=""/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/surefire/surefirebooter14100515851965935659.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="12.0.2+10"/>
-    <property name="user.name" value="vgrk2"/>
-    <property name="path.separator" value=";"/>
-    <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\vgrk2\.m2\repository"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="casey"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/casey/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\vgrk2\AppData\Local\Temp\"/>
-    <property name="java.version" value="12.0.2"/>
-    <property name="user.dir" value="C:\Users\vgrk2\eclipse-workspace-2\tau-cucumber-course"/>
-    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/var/folders/sb/qtzfnxp523n5wyzwsw2htjfh0000gn/T/"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course"/>
+    <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-12.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\ImageMagick-7.0.9-Q16;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk-12.0.2\\bin;C:\Users\vgrk2\scoop\shims;C:\Users\vgrk2\AppData\Local\Microsoft\WindowsApps;C:\Users\vgrk2\AppData\Roaming\npm;C:\Users\vgrk2\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vgrk2\AppData\Local\Yarn\bin;C:\Users\vgrk2\.dotnet\tools;."/>
+    <property name="java.library.path" value="/Users/casey/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="12.0.2+10"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="56.0"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="Login Successful" classname="Login Functionality" time="21.369"/>
-  <testcase name="Login Successful" classname="Login Functionality" time="19.969"/>
-  <testcase name="Login Successful" classname="Login Functionality" time="19.027"/>
-  <testcase name="Login Successful" classname="Login Functionality" time="19.545"/>
+  <testcase name="Login Successful" classname="Login Functionality" time="103.232">
+    <error message="Expected condition failed: waiting for element to be clickable: By.className: smallText (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: smallText (tried for 20 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".smallText"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Caseys-MacBook-Pro.local', ip: 'fe80:0:0:0:1c04:c138:da4b:2ea6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/sb/qtzfnxp523n...}, goog:chromeOptions: {debuggerAddress: localhost:65010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0b584878299977ed199326b836b538d
+*** Element info: {Using=class name, value=smallText}
+</error>
+    <system-out><![CDATA[Feature: Login Functionality
+	In order to do internet banking
+	As a valid Para Bank customer
+	I want to login successfully
+
+  @Login
+  Scenario: Login Successful                                  &amp#27;[90m# src/test/resources/Login.feature:9&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI am in the login page of the Para Bank Application&amp#27;[0m &amp#27;[90m# com.tau.steps.Steps.i_am_in_the_login_page_of_the_Para_Bank_Application() in file:/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/test-classes/&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI enter valid credentials&amp#27;[0m                            &amp#27;[90m# com.tau.steps.Steps.i_enter_valid_credentials(DataTable) in file:/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/test-classes/&amp#27;[0m
+    &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should be taken to the Overview page&amp#27;[0m               &amp#27;[90m# com.tau.steps.Steps.i_should_be_taken_to_the_Overview_page() in file:/Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/target/test-classes/&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: smallText (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.tau.steps.Steps.i_should_be_taken_to_the_Overview_page(Steps.java:123)
+	at ✽.I should be taken to the Overview page(///Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/src/test/resources/Login.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".smallText"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Caseys-MacBook-Pro.local', ip: 'fe80:0:0:0:1c04:c138:da4b:2ea6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/sb/qtzfnxp523n...}, goog:chromeOptions: {debuggerAddress: localhost:65010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0b584878299977ed199326b836b538d
+*** Element info: {Using=class name, value=smallText}
+	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.tau.steps.Steps.i_should_be_taken_to_the_Overview_page(Steps.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:28)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:58)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:60)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:46)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:168)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:79)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+&amp#27;[0m
+
+&amp#27;[31mFailed scenarios:&amp#27;[0m
+&amp#27;[31m///Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/src/test/resources/Login.feature:9 &amp#27;[0m# Login Successful
+
+1 Scenarios (&amp#27;[31m1 failed&amp#27;[0m)
+3 Steps (&amp#27;[31m1 failed&amp#27;[0m, &amp#27;[32m2 passed&amp#27;[0m)
+1m43.234s
+
+
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.className: smallText (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.tau.steps.Steps.i_should_be_taken_to_the_Overview_page(Steps.java:123)
+	at ✽.I should be taken to the Overview page(///Users/casey/Desktop/Cucumber_TAU/tau-cucumber-course/src/test/resources/Login.feature:14)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".smallText"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Caseys-MacBook-Pro.local', ip: 'fe80:0:0:0:1c04:c138:da4b:2ea6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/sb/qtzfnxp523n...}, goog:chromeOptions: {debuggerAddress: localhost:65010}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0b584878299977ed199326b836b538d
+*** Element info: {Using=class name, value=smallText}
+	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.tau.steps.Steps.i_should_be_taken_to_the_Overview_page(Steps.java:123)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:28)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:58)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:60)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:46)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:168)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:79)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:410)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 25374
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1624989954.311][WARNING]: This version of ChromeDriver has not been tested with Chrome version 91.
+Jun 29, 2021 11:05:54 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

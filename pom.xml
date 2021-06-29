@@ -12,6 +12,13 @@
 	</properties>
 
 	<dependencies>
+		<!-- Applitools SDK -->
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java3</artifactId>
+			<version>RELEASE</version> <!-- was 3.191.1 -->
+		</dependency>
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -101,7 +108,7 @@
 								<param>sample.properties</param>
 								<param>other.properties</param>
 							</classificationFiles>
-							<parallelTesting>false</parallelTesting>
+							<!--<parallelTesting>false</parallelTesting> -->
 							<!-- optional, set true to fail build on test failures -->
 							<checkBuildResult>false</checkBuildResult>
 						</configuration>

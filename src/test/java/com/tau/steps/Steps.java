@@ -4,6 +4,10 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
+import com.applitools.eyes.selenium.fluent.Target;
+import io.cucumber.java.Scenario;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +20,17 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.applitools.eyes.*;
+import com.applitools.eyes.selenium.BrowserType;
+import com.applitools.eyes.selenium.ClassicRunner;
+import com.applitools.eyes.selenium.Configuration;
+import com.applitools.eyes.selenium.Eyes;
+import com.applitools.eyes.visualgrid.model.*;
+import com.applitools.eyes.visualgrid.services.VisualGridRunner;
+
 
 public class Steps extends BaseUtil {
 	
@@ -26,108 +41,61 @@ public class Steps extends BaseUtil {
 	}
 	
 	private WebDriver driver;
-	
-	@Before()
-	public void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
-	}
-	
-	
-	
-	/* Code for Chapter 3.1
-	 
-	 @Given("I am in the login page of the Para Bank Application")
-	 public void i_am_in_the_login_page_of_the_Para_Bank_Application() {
-		System.setProperty(“webdriver.chrome.driver”, “C:\\Drivers\\chromedriver.exe”);
-		driver = new ChromeDriver();
-		driver.get(http://parabank.parasoft.com/parabank/index.htm);
-	}
-	
-	@When("I enter valid credentials")
-	public void i_enter_valid_credentials() {
-		
-		driver.findElement(By.name(“username”)).sendKeys(“tautester”);
-		driver.findElement(By.name(“password”)).sendKeys(“password”);
-		driver.findElement(By.name(“username”)).submit();
-	}
-	
-	@Then("I should be taken to the Overview page")
-	public void i_should_be_taken_to_the_Overview_page() throws Exception {
 
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(“//*[@id=\rightPanel\”]/div/div/h1”)));
-	
-		driver.findElement(By.xpath(“//*[@id=\rightPanel\”]/div/div/h1”)).isDisplayed();
-		driver.findElement(By.linkText(“Log out”)).click()’
-		driver.quit();	
+	private Eyes eyes;
+
+	public static BatchInfo batchInfo = new BatchInfo("Cucumber Batch");
+
+	public void eyesSetup() {
+		Configuration config = new Configuration();
+		config.addBrowser(1920, 800, BrowserType.CHROME);
+
+		//TODO uncomment these to add more browser + device Ultrafast grid configurations!
+		//config.addBrowser(1600, 1200, BrowserType.CHROME);
+		//config.addDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.PORTRAIT);
+
+		config.setLayoutBreakpoints(true);
+		config.setBatch(batchInfo);
+
+		eyes.setConfiguration(config);
 	}
-	
-	*/
-	
-	
+
+
+	@Before
+	public void setup (Scenario scenario) {
+		driver = new ChromeDriver();
+
+		VisualGridRunner runner = new VisualGridRunner();
+		eyes = new Eyes(runner);
+		eyesSetup();
+
+		//Use eyes.open to create tests with different names.
+		eyes.open( driver, "Sample Banking App", scenario.getName(), new RectangleSize(1200, 800));
+	}
+
 	@Given("I am in the login page")
 	@Given("I am in the login page of the Para Bank Application")
 	public void i_am_in_the_login_page_of_the_Para_Bank_Application() {
-	
-		
+
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
-	}
-	
-
-
-	/* Example Step for Scenario Outline
-	 
-	   	@When("I enter valid credentials")
-		public void i_enter_valid_credentials(String username, String password, String userFullName) {
-		
-			baseUtil.userFullName = userFullName;
-		
-			driver.findElement(By.name("username")).sendKeys(username);
-			driver.findElement(By.name("password")).sendKeys(password);
-			driver.findElement(By.name("username")).submit();
-	  
-		}*/
-	
-	@When("I enter valid {string} and {string}")
-	public void i_enter_valid_credentials_(String username, String password) {
-		
-		baseUtil.userFullName = userFullName;
-		
-		driver.findElement(By.name("username")).sendKeys(username);
-		driver.findElement(By.name("password")).sendKeys(password);
-		driver.findElement(By.name("username")).submit();
-	  
+		eyes.check(Target.window().fully().withName("Login Page"));
 	}
 
-
-	@When("I enter valid {string} and {string} with {string}")
-	public void i_enter_valid_credentials(String username, String password, String userFullName) {
-		
-		baseUtil.userFullName = userFullName;
-		
-		driver.findElement(By.name("username")).sendKeys(username);
-		driver.findElement(By.name("password")).sendKeys(password);
-		driver.findElement(By.name("username")).submit();
-	  
-	}
 
 	@Then("I should be taken to the Overview page")
 	public void i_should_be_taken_to_the_Overview_page() throws Exception {
 		
-		WebDriverWait wait = new WebDriverWait(driver, 20);
-		wait.until(ExpectedConditions.elementToBeClickable(By.className("smallText")));
-		
-		String actualuserFullName = driver.findElement(By.className("smallText")).getText().toString();
+		//WebDriverWait wait = new WebDriverWait(driver, 20);
+		//wait.until(ExpectedConditions.elementToBeClickable(By.className("smallText")));
 
-		System.out.println(baseUtil.userFullName.toString());
+		//No need for manual assertions w/Applitools!
+		//String actualuserFullName = driver.findElement(By.className("smallText")).getText().toString();
+		//assertTrue(actualuserFullName, actualuserFullName.contains(baseUtil.userFullName));
 
-		assertTrue(actualuserFullName, actualuserFullName.contains(baseUtil.userFullName));
-		
-		driver.findElement(By.linkText("Log Out")).click();
-		
-		// driver.quit();
-	  
+		eyes.check(Target.window().fully().withName("I should be taken to the overview page"));
+
+		//driver.findElement(By.linkText("Log Out")).click();
+
 	}
 	
 
@@ -135,6 +103,8 @@ public class Steps extends BaseUtil {
 	public void i_enter_valid_credentials(DataTable table) {
 		
 		List<String> loginForm=table.asList();
+
+		baseUtil.userFullName = loginForm.get(2);
 
 		driver.findElement(By.name("username")).sendKeys(loginForm.get(0));
 		driver.findElement(By.name("password")).sendKeys(loginForm.get(1));
@@ -144,8 +114,21 @@ public class Steps extends BaseUtil {
 
 	@After()
 	public void quitBrowser() {
-		driver.quit();
-		
+	    try{
+			driver.quit();
+			eyes.close();
+		}catch (Exception exception) {
+	    	eyes.abortIfNotClosed();
+		}
 	}
 
+	@When("I click the admin button")
+	public void iClickTheAdminButton() {
+		driver.findElement(By.cssSelector("#headerPanel > ul.leftmenu > li:nth-child(6) > a")).click();
+	}
+
+	@Then("I should be taken to the Admin page")
+	public void iShouldBeTakenToTheAdminPage() {
+		eyes.check(Target.window().fully().withName("I should be taken to the admin page"));
+	}
 }
